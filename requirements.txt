@@ -1,7 +1,7 @@
 streamlit
-langchain
-langchain-community
-pdfplumber
+groq
+pymupdf
 chromadb
 sentence-transformers
 transformers
+torch
