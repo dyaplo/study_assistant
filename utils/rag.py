@@ -1,9 +1,9 @@
 import chromadb
 from groq import Groq
 from utils.embeddings import get_embedding
+import streamlit as st
 
-
-client_groq = Groq(api_key="")
+client_groq = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 client = chromadb.Client()
 collection = client.get_or_create_collection(name="study_collection")
